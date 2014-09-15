@@ -17,7 +17,7 @@
       z-index: 2;
       content: '✡';
       font-size: 93px;
-      color: rgb(0,51,160);
+      color: @ilblu;
       line-height: 76px;
       font-weight: 800;
   }
@@ -25,8 +25,6 @@
   div:after {
     height: @main_height;
     width: @main_height * 1.375;
-    background-image: linear-gradient(to bottom, white  0%, white 9.375%, rgb(0,51,160) 9.375%, rgb(0,51,160) 25%,
-                                               transparent 25%, transparent 75%, rgb(0,51,160) 75%, rgb(0,51,160) 90.625%,
-                                               white 90.625%, white 100%);
+    background-image: linear-gradient(to bottom, white  0%, white 9.375%, @ilblu 9.375%, @ilblu 25%, transparent 25%, transparent 75%, @ilblu 75%, @ilblu 90.625%, white 90.625%, white 100%);
   }
 }
