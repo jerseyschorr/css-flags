@@ -89,15 +89,14 @@ header .share-link:hover {
   }
 }
 
-.name {
+.entry div.name {
   font-family: 'Alegreya Sans SC', sans-serif;
-  position: absolute;
-  /* height: 30px; */
+  width: 150px;
+  top: 0;
+  left: 0;
   z-index: 100;
   padding: 10px;
   font-size: 16px;
   background-color: rgba(0,0,0,0.1);
-  color: black;
+  text-align: left;
 }
-
-

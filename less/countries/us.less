@@ -1,0 +1,56 @@
+
+@usx: 26px;
+@usy: 20px;
+@usx2: 13px;
+@usy2: 10px;
+@stripe: 100% / 13;
+
+#us {
+  div {
+    width: @main_height * 1.9;
+    height: @main_height;
+    margin-left: -190px;
+    margin-top: -100px;
+    background-image: linear-gradient(to bottom,
+      @usred            0, @usred @stripe *  1,
+      white   @stripe *  1, white   @stripe *  2,
+      @usred @stripe *  2, @usred @stripe *  3,
+      white   @stripe *  3, white   @stripe *  4,
+      @usred @stripe *  4, @usred @stripe *  5,
+      white   @stripe *  5, white   @stripe *  6,
+      @usred @stripe *  6, @usred @stripe *  7,
+      white   @stripe *  7, white   @stripe *  8,
+      @usred @stripe *  8, @usred @stripe *  9,
+      white   @stripe *  9, white   @stripe * 10,
+      @usred @stripe * 10, @usred @stripe * 11,
+      white   @stripe * 11, white   @stripe * 12,
+      @usred @stripe * 12, @usred 100%);
+    box-shadow: 7px 7px 0 rgba(0,0,0,0.1);
+  }
+  div:before {
+    width: 39.473684211%;
+    height: 53.7%;
+    margin-left: -50%;
+    margin-top: -100px;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    background: #08086b;
+    content: '★';
+    font-size: 14px;
+    line-height: 27px;
+    padding-left: 5.5px;
+    color: white;
+    text-align: left;
+    text-shadow: @usx 0 0 white, @usx * 2 0 0 white, @usx * 3 0 0 white, @usx * 4 0 0 white, @usx * 5 0 0 white,
+                 0 @usy 0 white, @usx @usy 0 white, @usx * 1 @usy 0 white, @usx * 2 @usy 0 white, @usx * 3 @usy 0 white, @usx * 4 @usy 0 white, @usx * 5 @usy 0 white,
+                 0 @usy * 2 0 white, @usx @usy * 2 0 white, @usx * 1 @usy * 2 0 white, @usx * 2 @usy * 2 0 white, @usx * 3 @usy * 2 0 white, @usx * 4 @usy * 2 0 white, @usx * 5 @usy * 2 0 white,
+                 0 @usy * 3 0 white, @usx @usy * 3 0 white, @usx * 1 @usy * 3 0 white, @usx * 2 @usy * 3 0 white, @usx * 3 @usy * 3 0 white, @usx * 4 @usy * 3 0 white, @usx * 5 @usy * 3 0 white,
+                 0 @usy * 4 0 white, @usx @usy * 4 0 white, @usx * 1 @usy * 4 0 white, @usx * 2 @usy * 4 0 white, @usx * 3 @usy * 4 0 white, @usx * 4 @usy * 4 0 white, @usx * 5 @usy * 4 0 white,
+
+                 @usx2 @usy2 + @usy * 0 0 white, @usx2 + @usx @usy2 + @usy * 0 0 white, @usx2 + @usx * 2 @usy2 + @usy * 0 0 white,@usx2 + @usx * 3 @usy2 + @usy * 0 0 white,@usx2 + @usx * 4 @usy2 + @usy * 0 0 white,
+                 @usx2 @usy2 + @usy * 1 0 white, @usx2 + @usx @usy2 + @usy * 1 0 white, @usx2 + @usx * 2 @usy2 + @usy * 1 0 white,@usx2 + @usx * 3 @usy2 + @usy * 1 0 white,@usx2 + @usx * 4 @usy2 + @usy * 1 0 white,
+                 @usx2 @usy2 + @usy * 2 0 white, @usx2 + @usx @usy2 + @usy * 2 0 white, @usx2 + @usx * 2 @usy2 + @usy * 2 0 white,@usx2 + @usx * 3 @usy2 + @usy * 2 0 white,@usx2 + @usx * 4 @usy2 + @usy * 2 0 white,
+                 @usx2 @usy2 + @usy * 3 0 white, @usx2 + @usx @usy2 + @usy * 3 0 white, @usx2 + @usx * 2 @usy2 + @usy * 3 0 white,@usx2 + @usx * 3 @usy2 + @usy * 3 0 white,@usx2 + @usx * 4 @usy2 + @usy * 3 0 white;
+    }
+}
