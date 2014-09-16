@@ -1,0 +1,23 @@
+@jp_width: @main_height * 3/2;
+@jp_circle: @main_height * 3/5;
+
+#jp {
+  div {
+    height: @main_height;
+    width: @jp_width;
+    margin-left: -@se_width / 2;
+    margin-top: -@main_height / 2;
+    background-color: white;
+    box-shadow: 7px 7px 0 rgba(0,0,0,0.1);
+  }
+  div:before {
+    width: @jp_circle;
+    height: @jp_circle;
+    margin-left: -@jp_circle / 2;
+    margin-top: -@jp_circle / 2;
+    left: 50%;
+    top: 50%;
+    background: @jpred;
+    border-radius: 50%;
+  }
+}
