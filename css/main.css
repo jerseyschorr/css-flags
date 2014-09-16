@@ -90,13 +90,14 @@ header .share-link:hover {
 }
 
 .entry div.name {
-  font-family: 'Alegreya Sans SC', sans-serif;
-  width: 150px;
-  top: 0;
+  font-family: "Arial",sans-serif;
+  text-transform: uppercase;
+  color: #999;
+  overflow: auto;
+  width: 100%;
+  top: 260px;
   left: 0;
   z-index: 100;
-  padding: 10px;
-  font-size: 16px;
-  background-color: rgba(0,0,0,0.1);
-  text-align: left;
+  font-size: 9px;
+  text-align: center;
 }
