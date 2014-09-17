@@ -51,7 +51,7 @@ header .share-link:hover {
 }
 .entry {
   text-align: center;
-  min-height: 300px;
+  min-height: 250px;
   position: relative;
 }
 .entry div {
@@ -65,10 +65,30 @@ header .share-link:hover {
   content: '';
   position: absolute;
 }
+
+.entry div.name {
+  font-family: "Arial",sans-serif;
+  text-transform: uppercase;
+  color: #999;
+  overflow: auto;
+  width: 100%;
+  top: 240px;
+  left: 0;
+  z-index: 100;
+  font-size: 9px;
+  text-align: center;
+}
+
 @media (max-width: 400px) {
+  .entry {
+      min-height: 175px;
+  }
   .entry div {
     -webkit-transform: scale(0.8);
     transform: scale(0.8);
+  }
+  .entry div.name {
+    top: 160px;
   }
 }
 .cf:before,
@@ -79,7 +99,7 @@ header .share-link:hover {
 .cf:after {
   clear: both;
 }
-@media all and (min-width: 960px) {
+@media all and (min-width: 1000px) {
   .entry {
     float: left;
     width: 50%;
@@ -89,15 +109,12 @@ header .share-link:hover {
   }
 }
 
-.entry div.name {
-  font-family: "Arial",sans-serif;
-  text-transform: uppercase;
-  color: #999;
-  overflow: auto;
-  width: 100%;
-  top: 260px;
-  left: 0;
-  z-index: 100;
-  font-size: 9px;
-  text-align: center;
+@media all and (min-width: 1500px) {
+  .entry {
+    float: left;
+    width: 33%;
+  }
+  .entry.wide {
+    width: 100%;
+  }
 }
