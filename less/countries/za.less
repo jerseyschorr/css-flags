@@ -1,0 +1,34 @@
+@za_width: @main_height * 1.5;
+@za_stripe: 100%/15;
+@za_stripe2: 3.6980013%;
+
+
+//5:1:3:1:5
+
+#za {
+  div {
+    height: @main_height;
+    width: @za_width;
+    margin-left: -@za_width / 2;
+    margin-top: -@main_height / 2;
+    background-color: @za_blu;
+    box-shadow: 7px 7px 0 rgba(0,0,0,0.1);
+    background-image:
+        linear-gradient(to bottom, @za_red @za_stripe * 5, white @za_stripe * 5, white @za_stripe * 6, @za_grn @za_stripe * 6, @za_grn @za_stripe * 9 + 1, white @za_stripe * 9 + 1, white @za_stripe * 10 + 1, @za_blu @za_stripe * 10 + 1);
+  }
+  div:before {
+    height: @main_height;
+    width: @za_width;
+    clip: rect(0, 155px, @main_height, 0);
+    background-image:
+        linear-gradient(to left bottom, @za_red @za_stripe2 * 11, white @za_stripe2 * 11, white @za_stripe2 * 12, @za_grn @za_stripe2 * 12, @za_grn @za_stripe2 * 15, @za_yel @za_stripe2 * 15, @za_yel @za_stripe2 * 16, black @za_stripe2 * 16);
+    }
+
+  div:after {
+    height: @main_height;
+    width: @za_width;
+    clip: rect(@main_height / 2, 155px, @main_height, 0);
+    background-image:
+        linear-gradient(to left top, @za_blu @za_stripe2 * 11, white @za_stripe2 * 11, white @za_stripe2 * 12, @za_grn @za_stripe2 * 12, @za_grn @za_stripe2 * 15, @za_yel @za_stripe2 * 15, @za_yel @za_stripe2 * 16, black @za_stripe2 * 16);
+  }
+}
