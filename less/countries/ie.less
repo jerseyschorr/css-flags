@@ -1,0 +1,13 @@
+@import "colors.less";
+
+@ie_width: @main_height * 2;
+#ie {
+  div {
+    height: @main_height;
+    width: @ie_width;
+    margin-left: -@ie_width / 2;
+    margin-top: -@main_height / 2;
+    .stripes3vert(@ie_grn; white; @ie_org);
+    box-shadow: 7px 7px 0 rgba(0,0,0,0.1);
+  }
+}
