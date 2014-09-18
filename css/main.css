@@ -58,6 +58,7 @@ header .share-link:hover {
   position: absolute;
   left: 50%;
   top: 50%;
+  box-shadow: 7px 7px 0 rgba(0,0,0,0.1);
 }
 .entry div:before,
 .entry div:after {
@@ -66,12 +67,13 @@ header .share-link:hover {
   position: absolute;
 }
 
-.entry div.name {
+.entry p.name {
   font-family: "Arial",sans-serif;
   text-transform: uppercase;
   color: #999;
   overflow: auto;
   width: 100%;
+  position: relative;
   top: 240px;
   left: 0;
   z-index: 100;
@@ -87,7 +89,7 @@ header .share-link:hover {
     -webkit-transform: scale(0.8);
     transform: scale(0.8);
   }
-  .entry div.name {
+  .entry p.name {
     top: 160px;
   }
 }
