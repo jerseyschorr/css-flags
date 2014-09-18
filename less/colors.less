@@ -2,7 +2,7 @@
 
 //Pantone
 @116c: #ffcd00;
-@151c: #ff8200
+@151c: #ff8200;
 @186c: #c8102e;
 @179c: #e03c31;
 @193c: #bf0d3e;
@@ -10,10 +10,15 @@
 @282c: #041e42;
 @301c: #004b87;
 @347c: #009a44;
+@485c: #da291c;
 @1235c: #ffb81c;
+@1795c: #d22630;
 @3415c: #007749;
+@7405c: #f2cd00;
 
-
+@pl_red: @1795c;
+@de_red: @485c;
+@de_yel: @7405c;
 @ie_grn: @347c;
 @ie_org: @151c;
 @za_blu: #0c1c8c;
@@ -34,10 +39,18 @@
 
 
 //functions
-.stripes3vert(@color1, @color2, @color3, @amt1: 1/3, @amt2: 1/3) {
+.stripes(v; @color1; @color2; @amt: 1/2) {
+	background-image: linear-gradient(to right, @color1 100% * @amt, @color2 100% * @amt);
+}
+
+.stripes(h; @color1; @color2; @amt: 1/2) {
+	background-image: linear-gradient(to bottom, @color1 100% * @amt, @color2 100% * @amt);
+}
+
+.stripes(v; @color1; @color2; @color3; @amt1: 1/3; @amt2: 1/3) {
 	background-image: linear-gradient(to right, @color1 100% * @amt1, @color2 100% * @amt1, @color2 100% * (@amt1 + @amt2), @color3 100% * (@amt1 + @amt2));
 }
 
-.stripes3horz(@color1, @color2, @color3, @amt1: 1/3, @amt2: 1/3) {
+.stripes(h; @color1; @color2; @color3; @amt1: 1/3; @amt2: 1/3) {
 	background-image: linear-gradient(to bottom, @color1 100% * @amt1, @color2 100% * @amt1, @color2 100% * (@amt1 + @amt2), @color3 100% * (@amt1 + @amt2));
 }

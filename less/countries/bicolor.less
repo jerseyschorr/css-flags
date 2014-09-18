@@ -1,0 +1,12 @@
+@import "colors.less";
+
+@pl_width: @main_height * 8/5;
+#pl {
+  div {
+    height: @main_height;
+    width: @pl_width;
+    margin-left: -@pl_width / 2;
+    margin-top: -@main_height / 2;
+    .stripes(h; white; @pl_red);
+  }
+}

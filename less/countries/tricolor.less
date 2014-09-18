@@ -1,0 +1,23 @@
+@import "colors.less";
+
+@ie_width: @main_height * 2;
+#ie {
+  div {
+    height: @main_height;
+    width: @ie_width;
+    margin-left: -@ie_width / 2;
+    margin-top: -@main_height / 2;
+    .stripes(v; @ie_grn; white; @ie_org);
+  }
+}
+
+@de_width: @main_height * 5/3;
+#de {
+  div {
+    height: @main_height;
+    width: @de_width;
+    margin-left: -@de_width / 2;
+    margin-top: -@main_height / 2;
+    .stripes(h; black; @de_red; @de_yel);
+  }
+}
