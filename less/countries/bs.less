@@ -9,15 +9,8 @@
     .stripes(h; @bs_blu; @bs_yel; @bs_blu);
   }
   div:before {
-    height: @main_height / 2;
-    width: 173.20px;
-    background-image: linear-gradient(to left bottom, transparent 50%, black 50%);
+    border-left: 173.20px solid black;
+    border-top: @main_height / 2 solid transparent;
+    border-bottom: @main_height / 2 solid transparent;
   }
-  div:after {
-    height: @main_height / 2;
-    width: 173.20px;
-    top: 50%;
-    background-image:
-        linear-gradient(to left top, transparent 50%, black 50%);
-   }
 }
