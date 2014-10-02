@@ -1,0 +1,23 @@
+@bs_width: @main_height * 2;
+
+#bs {
+  div {
+    height: @main_height;
+    width: @bs_width;
+    margin-left: -@bs_width / 2;
+    margin-top: -@main_height / 2;
+    .stripes(h; @bs_blu; @bs_yel; @bs_blu);
+  }
+  div:before {
+    height: @main_height / 2;
+    width: 173.20px;
+    background-image: linear-gradient(to left bottom, transparent 50%, black 50%);
+  }
+  div:after {
+    height: @main_height / 2;
+    width: 173.20px;
+    top: 50%;
+    background-image:
+        linear-gradient(to left top, transparent 50%, black 50%);
+   }
+}
