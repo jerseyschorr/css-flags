@@ -1,0 +1,16 @@
+@bs_width: @main_height * 2;
+
+#bs {
+  div {
+    height: @main_height;
+    width: @bs_width;
+    margin-left: -@bs_width / 2;
+    margin-top: -@main_height / 2;
+    .stripes(h; @bs_blu; @bs_yel; @bs_blu);
+  }
+  div:before {
+    border-left: 173.20px solid black;
+    border-top: @main_height / 2 solid transparent;
+    border-bottom: @main_height / 2 solid transparent;
+  }
+}
