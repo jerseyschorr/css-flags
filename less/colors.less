@@ -1,4 +1,5 @@
 //colors
+@bgcolor: #f0e68c;
 
 //Pantone
 @032c: #ef3340;
@@ -12,10 +13,13 @@
 @193c: #bf0d3e;
 @280c: #012169;
 @282c: #041e42;
+@287c: rgb(0, 48, 135);
 @286c: #0033a0;
 @301c: #004b87;
 @312c: #00a9ce;
 @347c: #009a44;
+@364c: rgb(74, 119, 41);
+@348c: rgb(0, 132, 61);
 @370c: rgb(101, 141, 27);
 @485c: #da291c;
 @1235c: #ffb81c;
@@ -23,6 +27,8 @@
 @3415c: #007749;
 @3425c: #006341;
 @7405c: #f2cd00;
+@warm_red: rgb(249, 66, 58);
+@reflex_blue: rgb(0, 20, 137);
 
 @bs_yel: @115c;
 @bs_blu: @312c;
@@ -51,11 +57,13 @@
 @seyel: @116c;
 @ilblu: rgb(0,51,160);
 
+
 // Misc. Vars
 @main_height: 200px;
+@width_3_2: @main_height * 1.5;
 
 
-//functions
+// Functions
 .stripes(v; @color1; @color2; @amt: 1/2) {
 	background-image: linear-gradient(to right, @color1 100% * @amt, @color2 100% * @amt);
 }
