@@ -1,0 +1,80 @@
+@import "colors.less";
+
+@pl_width: @main_height * 1.6;
+#pl {
+  div {
+    height: @main_height;
+    width: @pl_width;
+    margin-left: -@pl_width / 2;
+    margin-top: -@main_height / 2;
+    .stripes(h; white; @pl_red);
+  }
+}
+
+@ie_width: @main_height * 2;
+#ie {
+  div {
+    height: @main_height;
+    width: @ie_width;
+    margin-left: -@ie_width / 2;
+    margin-top: -@main_height / 2;
+    .stripes(v; @ie_grn; white; @ie_org);
+  }
+}
+
+@de_width: @main_height * 5/3;
+#de {
+  div {
+    height: @main_height;
+    width: @de_width;
+    margin-left: -@de_width / 2;
+    margin-top: -@main_height / 2;
+    .stripes(h; black; @de_red; @de_yel);
+  }
+}
+
+@ru_w: @width_3_2;
+#ru {
+  div {
+    height: @main_height;
+    width: @ru_w;
+    margin-left: -@ru_w / 2;
+    margin-top: -@main_height / 2;
+    .stripes(h; white; @ru_blu; @ru_red);
+  }
+}
+
+//MADAGASCAR
+@mg_g: @348c;
+@mg_r: @warm_red;
+@mg_w: @width_3_2;
+#mg {
+  div {
+    height: @main_height;
+    width: @mg_w;
+    margin-left: -@mg_w / 2;
+    margin-top: -@main_height / 2;
+    background-image: linear-gradient(to right, white 33.333%, transparent 33.333%),
+    	linear-gradient(to bottom, @mg_r 50%, @mg_g 50%);
+  }
+}
+
+//GAMBIA
+@gm_r: @186c;
+@gm_b: @reflex_blue;
+@gm_g: @364c;
+@gm_w: @width_3_2;
+#gm {
+  div {
+    height: @main_height;
+    width: @gm_w;
+    margin-left: -@gm_w / 2;
+    margin-top: -@main_height / 2;
+    background-image: linear-gradient(to bottom, @gm_r 33%,
+    	white 33.333333333%, white 38.888888889%,
+    	@gm_b 38.888888889%, @gm_b 61.111111111%,
+      white 61.111111111%, white 66.666666667%,
+      @gm_g 66.666666667%);
+
+  }
+}

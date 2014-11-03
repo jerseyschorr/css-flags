@@ -60,6 +60,10 @@ header .share-link:hover {
   top: 50%;
   box-shadow: 7px 7px 0 rgba(0,0,0,0.1);
 }
+.entry.noborder div {
+  box-shadow: none;
+}
+
 .entry div:before,
 .entry div:after {
   display: block;
