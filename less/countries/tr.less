@@ -1,0 +1,27 @@
+@tr_red: @186c;
+@tr_width: @width_3_2;
+@tr_circle1: @main_height * 0.5;
+@tr_circle2: @main_height * 0.4;
+
+#tr {
+  div {
+    height: @main_height;
+    width: @tr_width;
+    margin-left: -@tr_width / 2;
+    margin-top: -@main_height / 2;
+    background-color: @tr_red;
+    background-image: radial-gradient(@tr_circle2 @tr_circle2 at (@main_height/2)+(@main_height/16), @tr_red 50%, transparent 50%),
+                      radial-gradient(@tr_circle1 @tr_circle1 at @main_height/2, #fff 50%, @tr_red 50%);
+  }
+  div:before {
+      width: @main_height/4;
+      height: @main_height/4;
+      top: (@main_height/2 - @main_height/8);
+      left: 46%;
+      content: '★';
+      font-size: 46px;
+      line-height: 52px;
+      transform: rotate(-18deg);
+      color: white;
+  }
+}
