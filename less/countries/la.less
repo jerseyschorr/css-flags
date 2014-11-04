@@ -1,0 +1,24 @@
+@la_red: @032c;
+@la_blue: @293c;
+@la_width: @width_3_2;
+@la_circle: (@main_height/2) * 0.8;
+
+#la {
+  div {
+    height: @main_height;
+    width: @la_width;
+    margin-left: -@la_width / 2;
+    margin-top: -@main_height / 2;
+    background-image: linear-gradient(to bottom, @la_red 25%, @la_blue 25%, @la_blue 75%, @la_red 25%);
+  }
+  div:before {
+      width: @la_circle;
+      height: @la_circle;
+      margin-left: -@la_circle / 2;
+      margin-top: -@la_circle / 2;
+      top: 50%;
+      left: 50%;
+      background-color: white;
+      border-radius: 50%;
+  }
+}
