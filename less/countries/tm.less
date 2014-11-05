@@ -1,5 +1,9 @@
-@tm_width: @main_height * 1.5;
-@tm_grn: green;
+@tm_width: @width_3_2;
+@tm_g: @342c;
+@tm_r: @187c;
+@tm_c: 49.6px;
+@tm_x: 12.8px;
+@tm_y: 6.4px;
 
 #tm {
   div {
@@ -7,9 +11,21 @@
     width: @tm_width;
     margin-left: -@tm_width / 2;
     margin-top: -@main_height / 2;
-    .stripes(v; green; #ca3745; green; 3/25; 9/50);
-    background-image: radial-gradient(circle 218px at 134px 40px, @tm_grn 12%, transparent 12%),
-                      radial-gradient(ellipse 218px at 134px 40px, rgba(255, 255, 255, 0), #fff5f5 50px,#990000 53px);
+    background-image:
+      radial-gradient(@tm_c @tm_c at 133px 41px, @tm_g 50%, transparent 50%),
+      radial-gradient(@tm_c @tm_c at 139px 45px, white 50%, transparent 50%),
+      linear-gradient(to right, @tm_g 12%, @tm_r 12%, @tm_r 30%, @tm_g 30%);
+  }
+  div:after {
+    top: 42px;
+    left: 119px;
+    z-index: 2;
+    content: '★';
+    font-size: 10px;
+    color: white;
+    text-align: left;
+    transform: rotate(180deg);
+    text-shadow: @tm_x @tm_y white, 0 @tm_y * 2 white, -@tm_x @tm_y * 3 white, 0 @tm_y * 4 white;
   }
   div:before {
     left: 35px;
