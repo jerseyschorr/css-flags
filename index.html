@@ -11,11 +11,15 @@
     <link rel="stylesheet" href="css/reset.css"/>
     <link rel="stylesheet" href="css/main.css"/>
     <link rel="stylesheet" href="css/flags.css"/>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jInvertScroll.js"></script>
   </head>
   <body class="cf">
     <header>
       <h1>CSS Flags : <p>inspired by <a href="http://a.singlediv.com/">a.single.div</a></p></h1>
     </header>
+    <div class="main scroll">
+    <!-- <div id="BXX" class="entry"><div id="bx"><div></div></div><p class="name">Brunei</p></div> -->
     <div id="TKM" class="entry"><div id="tm"><div></div></div><p class="name">Turkmenistan</p></div>
     <div id="LVA" class="entry"><div id="lv"><div></div></div><p class="name">Latvia | Latvija</p></div>
     <div id="LAO" class="entry"><div id="la"><div></div></div><p class="name">Laos | ລາວ</p></div>
@@ -40,5 +44,12 @@
     <div id="SWE" class="entry"><div id="se"><div></div></div><p class="name">Sweden | Sverige</p></div>
     <div id="UKM" class="entry"><div id="gb"><div></div></div><p class="name">United Kingdom</p></div>
     <div id="USA" class="entry"><div id="us"><div></div></div><p class="name">United States</p></div>
+</div>
+    <script>
+        var items = $('.entry').length;
+        var rows = Math.floor((window.innerHeight - 60) / 250);
+        $('.main').width( (450 * (items + items % rows)) / rows );
+        $.jInvertScroll(['.scroll']);
+    </script>
   </body>
 </html>
