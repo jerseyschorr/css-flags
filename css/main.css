@@ -1,17 +1,5 @@
 body {
-  background-color: #aaa;
-  overflow-x: hidden;
-}
-
-/**
-  * important: keep position fixed, you can however use top:0 instead of bottom:0
-  * if you want to make it stick to the top of the browser
-  */
-.scroll
-{
-    position: fixed;
-    /*top: 0;*/
-    left: 0;
+  background-color: #f0e68c;
 }
 
 header {
@@ -65,8 +53,6 @@ header .share-link:hover {
   text-align: center;
   min-height: 250px;
   position: relative;
-  float: left;
-  width: 450px;
 }
 .entry div {
   position: absolute;
@@ -88,7 +74,7 @@ header .share-link:hover {
 .entry p.name {
   font-family: "Arial",sans-serif;
   text-transform: uppercase;
-  color: #666;
+  color: #999;
   overflow: auto;
   width: 100%;
   position: relative;
@@ -99,10 +85,6 @@ header .share-link:hover {
   text-align: center;
 }
 
-.main {
-  overflow-x: hidden;
-}
-/*
 @media (max-width: 400px) {
   .entry {
       min-height: 175px;
@@ -123,7 +105,6 @@ header .share-link:hover {
 .cf:after {
   clear: both;
 }
-
 @media all and (min-width: 1000px) {
   .entry {
     float: left;
@@ -143,4 +124,3 @@ header .share-link:hover {
     width: 100%;
   }
 }
-*/
