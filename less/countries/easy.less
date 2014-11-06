@@ -11,7 +11,7 @@
   }
 }
 
-@ie_width: @main_height * 2;
+@ie_width: @width_2_1;
 #ie {
   div {
     height: @main_height;
@@ -76,5 +76,18 @@
       white 61.111111111%, white 66.666666667%,
       @gm_g 66.666666667%);
 
+  }
+}
+
+//LATVIA
+@lv_w: @width_2_1;
+@lv_r: @201c;
+#lv {
+  div {
+    height: @main_height;
+    width: @lv_w;
+    margin-left: -@lv_w / 2;
+    margin-top: -@main_height / 2;
+    .stripes(h; @lv_r; white; @lv_r; 2/5; 1/5;);
   }
 }
