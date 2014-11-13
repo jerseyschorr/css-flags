@@ -11,35 +11,45 @@
     <link rel="stylesheet" href="css/reset.css"/>
     <link rel="stylesheet" href="css/main.css"/>
     <link rel="stylesheet" href="css/flags.css"/>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jInvertScroll.js"></script>
   </head>
   <body class="cf">
     <header>
       <h1>CSS Flags : <p>inspired by <a href="http://a.singlediv.com/">a.single.div</a></p></h1>
     </header>
-    <div id="TZA" class="entry"><div id="tz"><div></div></div><p class="name">Tanzania</p></div>
+    <div class="main scroll">
+    <!-- <div id="BXX" class="entry"><div id="bx"><div></div></div><p class="name">Brunei</p></div> -->
     <div id="TKM" class="entry"><div id="tm"><div></div></div><p class="name">Turkmenistan</p></div>
     <div id="LVA" class="entry"><div id="lv"><div></div></div><p class="name">Latvia | Latvija</p></div>
     <div id="LAO" class="entry"><div id="la"><div></div></div><p class="name">Laos | ລາວ</p></div>
-    <div id="TUR" class="entry"><div id="tr"><div></div></div><p class="name">Turkey | Türkiye</p></div>
     <div id="GMB" class="entry"><div id="gm"><div></div></div><p class="name">The Gambia</p></div>
     <div id="MDG" class="entry"><div id="mg"><div></div></div><p class="name">Madagascar | Madagasikara</p></div>
+    <div id="TUR" class="entry"><div id="tr"><div></div></div><p class="name">Turkey | Türkiye</p></div>
     <!--
     <div id="NPL" class="entry noborder"><div id="np"><div></div></div><div id="np2"><div></div></div><p class="name">Nepal | नेपाल</p></div> -->
-    <div id="BLR" class="entry"><div id="by"><div></div></div><p class="name">Belarus‎ | Беларусь</p></div>
-    <div id="MNE" class="entry"><div id="me"><div></div></div><p class="name">Montenegro‎ | Crna Gora | Црна Гора</p></div>
-    <div id="CHN" class="entry"><div id="cn"><div></div></div><p class="name">China | 中国</p></div>
-    <div id="BMS" class="entry"><div id="bs"><div></div></div><p class="name">The Bahamas</p></div>
     <div id="AFG" class="entry"><div id="af"><div></div></div><p class="name">Afganistan | افغانستان‎</p></div>
-    <div id="RUS" class="entry"><div id="ru"><div></div></div><p class="name">Russia | Россия</p></div>
+    <div id="BMS" class="entry"><div id="bs"><div></div></div><p class="name">The Bahamas</p></div>
+    <div id="BLR" class="entry"><div id="by"><div></div></div><p class="name">Belarus‎ | Беларусь</p></div>
     <div id="CAN" class="entry"><div id="ca"><div></div></div><p class="name">Canada</p></div>
-    <div id="POL" class="entry"><div id="pl"><div></div></div><p class="name">Poland | Polska</p></div>
+    <div id="CHN" class="entry"><div id="cn"><div></div></div><p class="name">China | 中国</p></div>
     <div id="DEU" class="entry"><div id="de"><div></div></div><p class="name">Germany | Deutschland</p></div>
     <div id="IRL" class="entry"><div id="ie"><div></div></div><p class="name">Ireland | Éire</p></div>
-    <div id="ZAF" class="entry"><div id="za"><div></div></div><p class="name">South Africa</p></div>
+    <div id="ISR" class="entry"><div id="il"><div></div></div><p class="name">Israel | ישראל | إسرائيل</p></div>
+    <div id="MNE" class="entry"><div id="me"><div></div></div><p class="name">Montenegro‎ | Crna Gora | Црна Гора</p></div>
+    <div id="POL" class="entry"><div id="pl"><div></div></div><p class="name">Poland | Polska</p></div>
+    <div id="RUS" class="entry"><div id="ru"><div></div></div><p class="name">Russia | Россия</p></div>
     <div id="JPN" class="entry"><div id="jp"><div></div></div><p class="name">Japan | 日本</p></div>
+    <div id="ZAF" class="entry"><div id="za"><div></div></div><p class="name">South Africa</p></div>
     <div id="SWE" class="entry"><div id="se"><div></div></div><p class="name">Sweden | Sverige</p></div>
     <div id="UKM" class="entry"><div id="gb"><div></div></div><p class="name">United Kingdom</p></div>
-    <div id="ISR" class="entry"><div id="il"><div></div></div><p class="name">Israel | ישראל | إسرائيل</p></div>
     <div id="USA" class="entry"><div id="us"><div></div></div><p class="name">United States</p></div>
+</div>
+    <script>
+        var items = $('.entry').length;
+        var rows = Math.floor((window.innerHeight - 60) / 250);
+        $('.main').width( (450 * (items + items % rows)) / rows );
+        $.jInvertScroll(['.scroll']);
+    </script>
   </body>
 </html>

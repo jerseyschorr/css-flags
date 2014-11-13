@@ -1,29 +1,27 @@
-@gb_r: @186c;
-@gb_b: @280c;
-@gb_width: @main_height * 1.995;
+@gbwidth: @main_height * 1.995;
 
 #gb {
   div {
     height: @main_height;
-    width: @gb_width;
+    width: @gbwidth;
     margin-left: -200px;
     margin-top: -100px;
-    background-color: @gb_b;
+    background-color: @gbblu;
     background-image:
-        linear-gradient(to bottom, transparent 40%, @gb_r 40%, @gb_r 60%, transparent 60%),
-        linear-gradient(to right,  transparent 45%, @gb_r 45%, @gb_r 55%, transparent 55%),
+        linear-gradient(to bottom, transparent 40%, @gbred 40%, @gbred 60%, transparent 60%),
+        linear-gradient(to right,  transparent 45%, @gbred 45%, @gbred 55%, transparent 55%),
         linear-gradient(to bottom, transparent 33.33333%, white 33.33333%, white 66.66666%, transparent 66.66666%),
         linear-gradient(to right,  transparent 41.66667%, white 41.66667%, white 58.33333%, transparent 58.33333%),
-        linear-gradient(to left bottom, transparent 45.52786%, white 45.52786%, white 50%, @gb_r 50%, @gb_r 52.98142397%, white 52.98142397%, white 54.47213%, transparent 54.47213%),
-        linear-gradient(to left top, transparent 45.52786%, white 45.52786%, white 50%, @gb_r 50%, @gb_r 52.98142397%, white 52.98142397%, white 54.47213%, transparent 54.47213%);
+        linear-gradient(to left bottom, transparent 45.52786%, white 45.52786%, white 50%, @gbred 50%, @gbred 52.98142397%, white 52.98142397%, white 54.47213%, transparent 54.47213%),
+        linear-gradient(to left top, transparent 45.52786%, white 45.52786%, white 50%, @gbred 50%, @gbred 52.98142397%, white 52.98142397%, white 54.47213%, transparent 54.47213%);
   }
   div:after {
     height: @main_height;
-    width: @gb_width;
-    clip: rect(128px, @gb_width, @main_height, 0);
+    width: @gbwidth;
+    clip: rect(128px, @gbwidth, @main_height, 0);
 
     background-image:
-        linear-gradient(to right bottom, transparent 45.52786%, white 45.52786%, white 50%, @gb_r 50%, @gb_r 52.98142397%, white 52.98142397%, white 54.47213%, transparent 54.47213%),
-        linear-gradient(to right top, transparent 45.52786%, white 45.52786%, white 50%, @gb_r 50%, @gb_r 52.98142397%, white 52.98142397%, white 54.47213%, transparent 54.47213%);
+        linear-gradient(to right bottom, transparent 45.52786%, white 45.52786%, white 50%, @gbred 50%, @gbred 52.98142397%, white 52.98142397%, white 54.47213%, transparent 54.47213%),
+        linear-gradient(to right top, transparent 45.52786%, white 45.52786%, white 50%, @gbred 50%, @gbred 52.98142397%, white 52.98142397%, white 54.47213%, transparent 54.47213%);
   }
 }
