@@ -1,0 +1,35 @@
+@dz_w: @ratio32;
+@dz_red: @186c;
+@dz_grn: @356c;
+@dz_w50: @dz_w * 0.5;
+@dz_w53: @dz_w * 0.538888889;
+@dz_w58: @dz_w * 0.588888889;
+
+
+#dz {
+  div {
+    height: @height;
+    width: @dz_w;
+    margin-left: -@dz_w50;
+    margin-top: -@height50;
+    background-image:
+      radial-gradient(@height40 @height40 at @dz_w53 @height50, white 50%, transparent 50%),
+      radial-gradient(@height50 @height50 at @dz_w50 @height50, @dz_red 50%, transparent 50%),
+      linear-gradient(to right, @dz_grn 50%, white 50%);
+  }
+  div:before {
+      height: @height;
+      width: @dz_w58;
+      content: '★';
+      font-size: 1.75em;
+      transform: rotate(90deg);
+      color: @dz_red;
+  }
+  div:after {
+    height: @height;
+    width: @dz_w;
+    clip: rect(0, @dz_w50, @height, 0);
+    background-image:
+      radial-gradient(@height40 @height40 at @dz_w53 @height50, @dz_grn 50%, transparent 50%);
+  }
+}
