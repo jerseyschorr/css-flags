@@ -1,0 +1,38 @@
+@au_w: @ratio21;
+@au_red: @186c;
+@au_blu: @281c;
+@au_w25: @au_w * 0.25;
+@au_w50: @au_w * 0.5;
+@au_h6: @height * 6.666666667;
+
+#au {
+  div {
+    height: @height;
+    width: @au_w;
+    margin-left: -@au_w50;
+    margin-top: -@height50;
+    background-color: pink;
+    background-image:
+      radial-gradient(@au_h6 @au_h6 at @au_w50 @height50, white 50%, @au_blu 50%);
+  }
+  div:before {
+    height: @height50;
+    width: @au_w50;
+    background-image:
+        linear-gradient(to bottom, transparent 40%, @au_red 40%, @au_red 60%, transparent 60%),
+        linear-gradient(to right,  transparent 45%, @au_red 45%, @au_red 55%, transparent 55%),
+        linear-gradient(to bottom, transparent 33.33333%, @White 33.33333%, @White 66.66666%, transparent 66.66666%),
+        linear-gradient(to right,  transparent 41.66667%, @White 41.66667%, @White 58.33333%, transparent 58.33333%),
+        linear-gradient(to left bottom, transparent 45.52786%, @White 45.52786%, @White 50%, @au_red 50%, @au_red 52.98142397%, @White 52.98142397%, @White 54.47213%, transparent 54.47213%),
+        linear-gradient(to left top, transparent 45.52786%, @White 45.52786%, @White 50%, @au_red 50%, @au_red 52.98142397%, @White 52.98142397%, @White 54.47213%, transparent 54.47213%);
+  }
+  div:after {
+    height: @height50;
+    width: @au_w;
+    clip: rect(128px, @au_w, @height, 0);
+
+    background-image:
+        linear-gradient(to right bottom, transparent 45.52786%, @White 45.52786%, @White 50%, @au_red 50%, @au_red 52.98142397%, @White 52.98142397%, @White 54.47213%, transparent 54.47213%),
+        linear-gradient(to right top, transparent 45.52786%, @White 45.52786%, @White 50%, @au_red 50%, @au_red 52.98142397%, @White 52.98142397%, @White 54.47213%, transparent 54.47213%);
+  }
+}

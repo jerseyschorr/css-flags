@@ -1,0 +1,16 @@
+@ao_w: @ratio32;
+@ao_red: @186c;
+@ao_yel: @115c;
+@ao_blu: @072c;
+@ao_w50: @ao_w * 0.5;
+
+
+#ao {
+  div {
+    height: @height;
+    width: @ao_w;
+    margin-left: -@ao_w50;
+    margin-top: -@height50;
+    .stripes(h; @ao_red; black;);
+  }
+}
