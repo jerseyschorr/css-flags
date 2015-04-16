@@ -1,0 +1,16 @@
+@armenia_w: @ratio21;
+@armenia_blu: @286c;
+@armenia_yel: @1235c;
+@armenia_red: @485c;
+@armenia_w50: @armenia_w * 0.5;
+
+
+#armenia {
+  div {
+    height: @height;
+    width: @armenia_w;
+    margin-left: -@armenia_w50;
+    margin-top: -@height50;
+    .stripes(h; @armenia_red; @armenia_blu; @armenia_yel;);
+  }
+}

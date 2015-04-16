@@ -51,14 +51,14 @@ header .share-link:hover {
 }
 .entry {
   text-align: center;
-  min-height: 250px;
+  min-height: 200px;
   position: relative;
 }
 .entry div {
   position: absolute;
   left: 50%;
   top: 50%;
-  box-shadow: 7px 7px 0 rgba(0,0,0,0.1);
+  box-shadow: 5px 5px 0 rgba(0,0,0,0.1);
 }
 .entry.noborder div {
   box-shadow: none;
@@ -78,25 +78,13 @@ header .share-link:hover {
   overflow: auto;
   width: 100%;
   position: relative;
-  top: 240px;
+  top: 185px;
   left: 0;
   z-index: 100;
   font-size: 9px;
   text-align: center;
 }
 
-@media (max-width: 400px) {
-  .entry {
-      min-height: 175px;
-  }
-  .entry div {
-    -webkit-transform: scale(0.8);
-    transform: scale(0.8);
-  }
-  .entry p.name {
-    top: 160px;
-  }
-}
 .cf:before,
 .cf:after {
   content: " ";
@@ -105,22 +93,40 @@ header .share-link:hover {
 .cf:after {
   clear: both;
 }
-@media all and (min-width: 1000px) {
+
+
+@media all and (min-width: 650px) {
   .entry {
     float: left;
     width: 50%;
   }
-  .entry.wide {
-    width: 100%;
-  }
 }
 
-@media all and (min-width: 1500px) {
+
+@media all and (min-width: 975px) {
   .entry {
     float: left;
     width: 33%;
   }
-  .entry.wide {
-    width: 100%;
+}
+
+@media all and (min-width: 1300px) {
+  .entry {
+    float: left;
+    width: 25%;
+  }
+}
+
+@media all and (min-width: 1625px) {
+  .entry {
+    float: left;
+    width: 20%;
+  }
+}
+
+@media all and (min-width: 1950px) {
+  .entry {
+    float: left;
+    width: 16.666666667%;
   }
 }
